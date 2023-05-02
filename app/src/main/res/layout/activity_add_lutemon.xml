@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddLutemonActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE LUTEMON"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lutemon types:"/>
+
+    <RadioGroup
+        android:id="@+id/lutemonTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/whiteLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="White"
+            android:tag="WHITE"/>
+
+        <RadioButton
+            android:id="@+id/blackLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:tag="BLACK"/>
+
+        <RadioButton
+            android:id="@+id/orangeLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:tag="ORANGE"/>
+
+        <RadioButton
+            android:id="@+id/pinkLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pink"
+            android:tag="PINK"/>
+
+        <RadioButton
+            android:id="@+id/greenLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:tag="GREEN"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/lutemonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Lutemons name here..."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:onClick="onCreateLutemonClick"/>
+
+
+
+
+</LinearLayout>
