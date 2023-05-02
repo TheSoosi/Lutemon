@@ -19,8 +19,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Comment this line to not include pre-made Lutemons.
         createTestLutemons();
     }
+
+    //These are pre-made Lutemons for testing purposes.
     private void createTestLutemons(){
         HomeStorage storage = HomeStorage.getInstance();
         storage.createLutemon("meow", LutemonType.BLACK);
